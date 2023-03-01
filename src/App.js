@@ -7,6 +7,7 @@ import PersonDetail from "./pages/PersonDetail";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 import Paths from "./pages/Paths";
+import PrivateRouter from "./pages/PrivateRouter";
 
 function App() {
   return (
