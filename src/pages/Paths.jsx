@@ -1,7 +1,6 @@
-import { Link, useNavigate, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Paths = () => {
-  const navigate = useNavigate();
   return (
     <div className="container mt-4">
       <h1>
@@ -15,16 +14,15 @@ const Paths = () => {
         experts!
       </p>
       <div>
-        <Link className="btn btn-success w-50" to="">
-          {/* <Link className="btn btn-success w-50" to="fullstack"> */}
+        {/* Relative */}
+        <Link className="btn btn-success w-50" to="fullstack/react">
+          {/* Absolute */}
+          {/* <Link className="btn btn-success w-50" to="/paths/fullstack"> */}
           Fullstack
         </Link>
-        <button
-          className="btn btn-warning w-50"
-          onClick={() => navigate("aws")}
-        >
+        <Link className="btn btn-warning w-50" to="">
           Aws-Devops
-        </button>
+        </Link>
       </div>
       <Outlet />
     </div>

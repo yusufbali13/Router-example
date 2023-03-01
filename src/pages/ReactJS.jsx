@@ -1,7 +1,5 @@
-import React from "react";
-
 const ReactJS = () => {
-  return <div></div>;
+  return <div>ReactJS</div>;
 };
 
 export default ReactJS;
