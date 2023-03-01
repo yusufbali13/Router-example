@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import NotFound from "./NotFound";
 import spinner from "../img/Spinner-2.gif";
@@ -34,7 +34,7 @@ const PersonDetail = () => {
   };
   useEffect(() => {
     getPerson();
-  }, []);
+  });
 
   if (error) {
     return <NotFound />;

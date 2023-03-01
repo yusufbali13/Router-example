@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //? Link, NavLink ve Navigate componentleri declarative routing
 //? gerceklestirmek icin kullanilir.
